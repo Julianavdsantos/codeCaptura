@@ -129,7 +129,7 @@ exportBtn.setAttribute(
  
  `data:text/csvcharset=utf-8,${encodeURIComponent(CSVString)}`
 )
-exportBtn.setAttribute('download',  'table.csv')
+exportBtn.setAttribute('download',  'table.pdf')
 
 })
 
