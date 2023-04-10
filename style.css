@@ -1,0 +1,83 @@
+
+table {
+border-collapse: collapse;
+border: 1px solid #4c4646;
+width: 100%;
+    
+}
+table th{
+    background-color: rgb(68, 62, 62);
+    font-size:40px;
+    color: #fff;
+
+}
+
+table th, td{
+  padding: 1px 5px;
+  text-align: left;
+  font-size: 15px;
+
+}
+
+table td img{
+    width: 22px;
+    
+  
+  }
+
+  a{
+    text-decoration: none;
+
+  }
+  
+  i{
+    width: 60px;
+    
+  }
+  
+
+  
+  #Btndownload{
+   
+    cursor: pointer;
+      background-color: #eee5e5;
+     width: 80px;
+    text-align: center; 
+      border-radius: 6px; 
+      padding: 8px;
+      border-color: #161515;
+      border: 20px;
+       
+  }
+  #Btndownload :first-child :hover{
+   border: 5px solid blue;
+    border-color: #eee5e5;;
+   
+   
+      
+  }
+
+  span a{
+    display: none;
+  }
+
+    #departments{
+      display: flex;
+      margin: 20px;
+      gap: 1rem;
+    }
+    input{
+      font-size:20px;
+    }
+    #preco{
+      font-size:20px;
+
+    }
+    label{
+      font-size:20px;
+    }
+    
+    
+    
+    
+    
