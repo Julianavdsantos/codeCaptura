@@ -40,7 +40,7 @@ function newTask()
 {
   let input = document.getElementById('produto')
   let nomeSetor = document.getElementById('preco')
-  
+  tableRows = document.querySelectorAll('tr');
 
   
   if(!input.value)
@@ -113,7 +113,7 @@ showValues()
 
 
 
-const tableRows = document.querySelectorAll('tr');
+let tableRows = document.querySelectorAll('tr');
 const exportBtn = document.querySelector('[data-js="export-table-btn"]');
 
 exportBtn.addEventListener('click', () =>{
