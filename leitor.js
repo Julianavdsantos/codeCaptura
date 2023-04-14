@@ -78,6 +78,8 @@ function showValues()
   list.innerHTML = ' '
   for (let i = 0; i < values.length; i++)
   { 
+    tableRows = document.querySelectorAll('tr');
+
     let tr = tbody.insertRow();
     
        
