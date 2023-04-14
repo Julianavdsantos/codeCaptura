@@ -1,9 +1,41 @@
+body{
+  background-color: LightGray;
+  
+}
+header{
+  height:30px;
+ 
 
+}
+
+
+#qr-reader{
+  margin-top: 2%;
+  margin-left: 20%;
+ margin-right: 15%;
+
+}
+
+
+
+.todo{
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 500px;
+  background-color: LightGray;
+
+
+
+}
 table {
+  
+margin-left: 15%;
+margin-right: 20%;
 border-collapse: collapse;
 border: 1px solid #4c4646;
-width: 100%;
-    
+width: 70%;
+align-items: center;
+  
 }
 table th{
     background-color: rgb(68, 62, 62);
@@ -23,6 +55,11 @@ table td img{
     width: 22px;
     
   
+  }
+  select{
+    width: 30%;
+   height: 25px;
+     
   }
 
   a{
@@ -63,20 +100,28 @@ table td img{
 
     #departments{
       display: flex;
-      margin: 20px;
+      margin-left: 20%;
+      margin-top: 2%;
+      margin-bottom: 2%;
       gap: 1rem;
     }
     input{
-      font-size:20px;
+      
+      width: 90%;
+      height: 18px;
     }
     #preco{
       font-size:20px;
 
     }
-    label{
-      font-size:20px;
+
+    th:nth-last-child(4n+1){
+      width: 10px;
+      
     }
     
+    
+  
     
     
     
