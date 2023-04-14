@@ -92,7 +92,7 @@ function showValues()
     td_produto.innerText = `${values[i]['departamento']}`/*departamento */
     td_valor.innerText = `${values[i]['name']}` /*campo codigo*/
     td_data.innerText = `${values[i]['day']}` /*campo codigo*/
-    td_acoes.innerHTML = `<button id='btnExcluir' onclick='removeItem("${values[i]['acao']}")'>Excluir</button><th>`
+    td_acoes.innerHTML = `<button id='btnExcluir' style=" background-color: LightGray; border:none" onclick='removeItem("${values[i]['acao']}")'><i class="fa fa-trash" aria-hidden="true"></i></button><th>`
   
   
 
