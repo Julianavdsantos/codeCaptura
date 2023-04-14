@@ -38,9 +38,10 @@ return `${newDate.getDate()}/${newDate.getMonth()+1}/${newDate.getFullYear()}`
 
 function newTask()
 {
+
   let input = document.getElementById('produto')
   let nomeSetor = document.getElementById('preco')
-  tableRows = document.querySelectorAll('tr');
+  
 
   
   if(!input.value)
@@ -78,8 +79,6 @@ function showValues()
   list.innerHTML = ' '
   for (let i = 0; i < values.length; i++)
   { 
-    tableRows = document.querySelectorAll('tr');
-
     let tr = tbody.insertRow();
     
        
@@ -119,7 +118,6 @@ let tableRows = document.querySelectorAll('tr');
 const exportBtn = document.querySelector('[data-js="export-table-btn"]');
 
 exportBtn.addEventListener('click', () =>{
-
 const CSVString = Array.from(tableRows)
 .map(row => Array.from(row.cells)
 .map(cell => cell.textContent)
