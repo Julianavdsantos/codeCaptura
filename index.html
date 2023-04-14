@@ -18,8 +18,10 @@
 
     <title>Scan code</title>
 </head>
+<header><i class="fa-solid fa-bars"></i></header>
 
 <body>
+    <div class="todo">
 
     <div id="qr-reader" style="width: 600px; background-color: rgb(18, 17, 17);"></div>
 
@@ -27,8 +29,8 @@
                      
         <div id="departments" style="display: flex;">
             <div class="lineInput">
-                <label>Código de barras :</label>
-                <input id="produto" name="txtcode" />
+               
+                <input id="produto" name="txtcode" disabled placeholder="Código de barras " />
 
             </div>
             <select name="" id="preco">
@@ -36,51 +38,47 @@
                 <option value="Departamento pessoal">Departamento Pessoal</option>
                 <option>Acervo</option>
                 <option>Assessoria de comunicação</option>
+                <option>Almoxarifado</option>
                 <option>Biblioteca</option>
                 <option>Camara de ensino</option>
-                <option>Periodicos</option>
-                <option>Recursos humanos</option>
                 <option>Central de estágios</option>
                 <option>Centro de estudos português</option>
                 <option>Cenex</option>
-                <option>Centro de memória</option>
+                <option>Centro de memória</option>    
+                <option>Compras</option>
+                <option>Contabilidade</option>
                 <option>Colegiado de graduação</option>
                 <option>Colegiado de Graduação em Letras-Libras</option>
+                <option>Diretoria</option>
+                <option> Instituto Confúcio</option>
+                <option>Labed</option>
+                <option>LabVaL</option>
+                <option>Laboratório de Psicolinguística</option>
+                <option>Labfon</option>
+                <option>Literaterras</option>
+                <option>Leel</option>
+                <option>Fonologia</option>
+                <option>Ingrede</option>            
+                <option>Periodicos</option>
+                <option>Recursos humanos</option>
                 <option>Poslit</option>
                 <option>Poslin</option>
                 <option>Profletras</option>
-                <option>Diretoria</option>
-                <option>Labed</option>
-                <option>Leel</option>
-                <option>Labfon</option>
-                <option>Fonologia</option>
                 <option>Letra</option>
-                <option>Ingrede</option>
-                <option>Semiotec</option>
-                <option>Literaterras</option>
-                <option>LabVaL</option>
-                <option>Laboratório de Psicolinguística</option>
                 <option>Núcleo de Estudos Canadenses</option>
-                <option>Portaria</option>
-                <option>Sala dos professores</option>
-                <option>Almoxarifado</option>
                 <option>Patrimonio</option>
-                <option>Compras</option>
-                <option>Contabilidade</option>
+                <option>Portaria</option>                             
+                <option>Sala dos professores</option>
+                <option>Sala dos Servidores</option>
                 <option>Seçao de pessoa</option>
                 <option>Serviços gerais</option>
                 <option>Superintendência Administrativa</option>
-                <option> Instituto Confúcio</option>
-                <option>Sti 4050</option>
-                <option>Sti 3019</option>
-                <option>Sti 2015A</option>
-                <option>Sti 4008</option>
-                <option>Sala dos Servidores</option>
-               
-                                                           
-   
-    
-          </select>
+                <option>Setor de ti sla 4050</option>
+                <option>Setor de ti sla 3019</option>
+                <option>Setor de ti sla 2015A</option>
+                <option>Semiotec</option>
+                                                                                
+             </select>
 
             <button id="BtnAdd" onclick="newTask()">salvar</button>
             <button id="BtnAdd" onclick="cancelar()">Cancelar</button>
@@ -93,9 +91,9 @@
 
 
                     <th id="DP">Departamento </th>
-                    <th id="financeiro">Código</th>
+                    <th >Código</th>
                     <th>Data</th>
-                    <th id="financeiro">-</th>
+                    <th id="excluir" >Excluir</th>
 
 
                 </thead>
@@ -104,7 +102,7 @@
 
                 </tbody>
             </table>
-            <button id="Btndownload" for="icon"><a data-js="export-table-btn" role="button" class="btn btn-info">
+            <button id="Btndownload"><a data-js="export-table-btn" role="button" class="btn btn-info">
                 <i class="fa fa-download" aria-hidden="true" id="icon" ></i></a>Download</button>
 
 
@@ -116,6 +114,7 @@
 
             </ul>
         </div>
+    </div>
     </main>
     <script src="leitor.js"></script>
 
