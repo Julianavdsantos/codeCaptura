@@ -7,33 +7,42 @@ header{
  
 
 }
-
-
-#qr-reader{
-  margin-top: 2%;
-  margin-left: 20%;
- margin-right: 15%;
-
-}
-
-
-
 .todo{
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 500px;
-  background-color: LightGray;
-
-
+  margin-bottom: 20px;
+ 
 
 }
+
+main{
+  margin: 5%;
+  
+}
+input{
+  margin-bottom: 10px;
+
+}
+#btns{
+  margin-left: 90px;
+}
+
+
+
+
+  #Btns{
+   width: 95px;
+   gap: 30px;
+   margin-bottom: 10px;
+  
+
+  }
+
+
+
 table {
   
-margin-left: 15%;
-margin-right: 20%;
 border-collapse: collapse;
 border: 1px solid #4c4646;
-width: 70%;
+width: 500px;
 align-items: center;
   
 }
@@ -86,14 +95,7 @@ table td img{
       border: 20px;
        
   }
-  #Btndownload :first-child :hover{
-   border: 5px solid blue;
-    border-color: #eee5e5;;
-   
-   
-      
-  }
-
+              
   span a{
     display: none;
   }
@@ -119,10 +121,5 @@ table td img{
       width: 10px;
       
     }
-    
-    
-  
-    
-    
     
     
