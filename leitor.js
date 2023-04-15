@@ -118,6 +118,7 @@ let tableRows = document.querySelectorAll('tr');
 const exportBtn = document.querySelector('[data-js="export-table-btn"]');
 
 exportBtn.addEventListener('click', () =>{
+  location.reload()
 const CSVString = Array.from(tableRows)
 .map(row => Array.from(row.cells)
 .map(cell => cell.textContent)
