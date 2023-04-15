@@ -40,7 +40,7 @@ function newTask()
 {
 
   let input = document.getElementById('produto')
-  let nomeSetor = document.getElementById('preco')
+  let nomeSetor = document.getElementById('nomeSetor')
   
 
   
@@ -70,6 +70,13 @@ function newTask()
   }
   input.value = ''
   
+}
+
+function cancelar(){
+  nomeSetor.remove();
+
+  
+
 }
 
 function showValues()
