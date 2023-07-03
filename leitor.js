@@ -143,12 +143,13 @@ function onScanSuccess(decodedText, decodedResult) {
   })
   
 
-  function clearAll(){
-    let values = JSON.parse(localStorage.getItem(localStorageKey)|| "[]")
-    values.length = 0
-    localStorage.setItem(localStorageKey,JSON.stringify(values))
-    showValues()
+  function clearAll() {
+    if (confirm('Tem certeza de que deseja limpar a tabela?')) {
+      let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+      values.length = 0;
+      localStorage.setItem(localStorageKey, JSON.stringify(values));
+      showValues();
+    }
   }
-  
   
   
